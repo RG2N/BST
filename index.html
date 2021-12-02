@@ -18,56 +18,6 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
-.numbers {
-  font-family: 'Arial', sans-serif;
-  font-size: 500px;
-  line-height: 1em;
-  text-align: center;
-  margin: 40px auto;
-  overflow: hidden;
-}
-.numbers__window {
-  display: inline-block;
-  overflow: hidden;
-  width: 0.5em;
-  height: 1em;
-}
-.numbers__window__digit {
-  font: inherit;
-  word-break: break-all;
-  display: block;
-  width: 0;
-  padding: 0 0.52em 0 0;
-  margin: 0 auto;
-  overflow: inherit;
-  animation: counting 0.4s steps(10) forwards infinite;
-}
-.numbers__window__digit::before {
-  content: attr(data-fake);
-  display: inline-block;
-  width: 100%;
-  height: auto;
-}
-@keyframes counting {
-  100% {
-    transform: translate3d(0, -10em, 0);
-  }
-}
-.numbers__window__digit--1 {
-  animation-iteration-count: 3;
-}
-.numbers__window__digit--2 {
-  animation-iteration-count: 6;
-}
-.numbers__window__digit--3 {
-  animation-iteration-count: 9;
-}
-.numbers__window__digit--4 {
-  animation-iteration-count: 12;
-}
-.numbers__window__digit--5 {
-  animation-iteration-count: 15;
-}
 </style>
 <script src=""></script>
 <body>
@@ -81,18 +31,9 @@
       Web Developer
     </h3>
     <div class="parallax">
-    <span class="numbers__window">
-        <span class="numbers__window__digit numbers__window__digit--1" data-fake="8642519073">2</span>
-    </span>
-    <span class="numbers__window">
-        <span class="numbers__window__digit numbers__window__digit--2" data-fake="5207186394">0</span>
-    </span>
-    <span class="numbers__window">
-        <span class="numbers__window__digit numbers__window__digit--3" data-fake="8395216407">2</span>
-    </span>
-      <span class="numbers__window">
-        <span class="numbers__window__digit numbers__window__digit--4" data-fake="8395216407">1</span>
-    </span>
+      <h3>
+        2021
+      </h3>
     </div>
   </div>
 </center>
